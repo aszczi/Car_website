@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>wybor pierwszego auta</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('tlo.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .navbar {
+      background-color: navy;
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+
+    .dropdown .dropbtn {
+      font-size: 16px;
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+
+    .navbar a:hover, .dropdown:hover .dropbtn {
+      background-color: purple;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: navy;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      float: none;
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown-content a:hover {
+      background-color: purple;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 80%; 
+      margin: 20px;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .content img {
+      max-width: 40%;
+      margin: 20px 0; /* Dodaj odstęp między zdjęciami */
+    }
+
+
+  </style>
+</head>
+
+<body>
+
+  <div class="navbar">
+    <a href="index.html">Strona główna</a>
+    <div class="dropdown">
+      <button class="dropbtn">Nowinki motoryzacyjne
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="wybor_pierwszego_auta.html">Wybór pierwszego auta</a>
+        <a href="dbanie_o_auto_w_zimie.html">Dbanie o auto w zimie</a>
+        <a href="luksusowe_samochody.html">Luksusowe samochody</a>
+      </div>
+    </div>
+    <a href="nasza_baza_samochodow.html">Nasza baza samochodów</a>
+    <a href="kontakt.html">Kontakt</a>
+  </div>
+
+  <div class="content">
+    <img src="pierwsze_auto.png" alt="autko">
+  
+    <div>
+        <header>
+            <h1>Wybór Pierwszego Auta</h1>
+        </header>
+    
+        <main>
+            <p>Decyzja o zakupie pierwszego samochodu jest ekscytującym krokiem w życiu każdego kierowcy. Przed podjęciem tej ważnej decyzji warto zastanowić się nad kilkoma kluczowymi aspektami, które pomogą znaleźć pojazd idealnie dopasowany do Twoich potrzeb.</p>
+    
+            <h2>Rozważ swoje potrzeby i styl życia</h2>
+            <p>Przed rozpoczęciem poszukiwań warto zastanowić się, jakie są Twoje rzeczywiste potrzeby i styl życia. Jeśli głównie poruszasz się po mieście, kompaktowy hatchback lub sedan może być idealnym wyborem ze względu na łatwość parkowania i oszczędność paliwa.</p>
+            <p>Jeśli natomiast planujesz często podróżować lub masz większą rodzinę, warto rozważyć większy samochód, takie jak SUV lub minivan, który zapewni wystarczająco dużo miejsca dla pasażerów i bagażu.</p>
+    
+            <h2>Określ budżet</h2>
+            <p>Zanim zdecydujesz się na konkretny model, ustal realistyczny budżet na zakup i utrzymanie samochodu. Pamiętaj, że koszty związane z posiadaniem auta to nie tylko cena zakupu, ale również ubezpieczenie, paliwo, serwis czy ewentualne naprawy.</p>
+            <p>Warto być przygotowanym na dodatkowe wydatki i mieć pewność, że utrzymanie wybranego modelu mieści się w Twoich finansowych możliwościach.</p>
+    
+            <h2>Przeprowadź badania i testy</h2>
+            <p>Zanim podejmiesz ostateczną decyzję, przeprowadź badania na temat różnych modeli, sprawdź recenzje ekspertów i opinie innych użytkowników. Warto również skorzystać z możliwości przetestowania auta podczas jazdy próbnej.</p>
+            <p>W trakcie testów zwróć uwagę na komfort jazdy, widoczność, łatwość obsługi oraz ewentualne funkcje dodatkowe. To pomoże Ci lepiej zrozumieć, czy dany model spełnia Twoje oczekiwania.</p>
+    
+            <h2>Porównaj oferty</h2>
+            <p>Przed podjęciem ostatecznej decyzji, porównaj różne oferty od różnych dealerów. Sprawdź, czy nie ma dostępnych promocji lub specjalnych ofert finansowania, które mogą wpłynąć na atrakcyjność danej propozycji.</p>
+            <p>Bądź gotów do negocjacji cenowej i nie wahaj się pytać o dodatkowe korzyści, które mogą być dostępne przy zakupie samochodu.</p>
+    
+            <h2>Podsumowanie</h2>
+            <p>Podjęcie decyzji o zakupie pierwszego samochodu to emocjonujący krok, który wymaga odpowiedniego przygotowania. Rozważanie własnych potrzeb, ustalanie budżetu, przeprowadzanie badań i testów oraz porównywanie ofert to kluczowe kroki, które pomogą Ci znaleźć idealny pojazd.</p>
+            <p>Pamiętaj, że wybór pierwszego auta to także rozpoczęcie nowego etapu w Twoim życiu, pełnego niezapomnianych podróży i przygód za kierownicą.</p>
+        </main>
+    
+    
+  
+  </div>
+
+</body>
+
+</html>

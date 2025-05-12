@@ -1,0 +1,80 @@
+<html>
+<head> <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f8ff; 
+        }
+
+        .formularz {
+            background-color: #ffffff; 
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        input[type="submit"] {
+            background-color: #00BFFF;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+ <form class="formularz" action="insert_samochody.php" method="post">
+<h3>Dodaj nowe autko, aby wyświetlić bazę</h3>
+  <div class="form-group">
+     <label>Marka</label>
+     <input type="text" name="marka" class="form-control">
+  </div>
+  <div class="form-group">
+     <label>Model</label>
+     <input type="text" name="model" class="form-control">
+  </div>
+  <div class="form-group">
+    <label>Rok</label>
+    <input type="number" name="rok" class="form-control" value="2010">
+  </div>
+  <div class="form-group">
+    <label>Przebieg</label>
+    <input type="number" name="przebieg" class="form-control">
+ </div>
+ <div class="form-group">
+    <label>Pojemnosc</label>
+    <input type="text" name="pojemnosc" step="0.1" class="form-control">
+ </div>
+ <div class="form-group">
+        <label>Wypadkowy</label>
+        <select name="wypadkowy" class="form-control">
+            <option value="TAK">TAK</option>
+            <option value="NIE">NIE</option>
+        </select>
+ </div>
+ <div class="form-group">
+    <label>Kraj pochodzenia</label>
+    <input type="text" name="kraj_pochodzenia" class="form-control">
+ </div>
+ <div class="form-group">
+        <label>Pierwszy właściciel</label>
+        <select name="pierwszy_wlasciciel" class="form-control">
+            <option value="TAK">TAK</option>
+            <option value="NIE">NIE</option>
+        </select>
+ </div>
+       <input type="submit" name="submit" value="Wyślij">
+ </form>
+
+</body>
+</html>

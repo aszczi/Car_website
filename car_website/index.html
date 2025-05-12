@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Motofan</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('tlo.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .navbar {
+      background-color: navy;
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+
+    .dropdown .dropbtn {
+      font-size: 16px;
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+
+    .navbar a:hover, .dropdown:hover .dropbtn {
+      background-color: purple;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: navy;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      float: none;
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown-content a:hover {
+      background-color: purple;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .content {
+      display: flex;
+      width: 80%; 
+      margin: 20px;
+      background: rgba(0, 0, 0, 0.7); 
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .content img {
+      max-width: 100%;
+      margin-right: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="navbar">
+    <a href="index.html">Strona główna</a>
+    <div class="dropdown">
+      <button class="dropbtn">Nowinki motoryzacyjne
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="wybor_pierwszego_auta.html">Wybór pierwszego auta</a>
+        <a href="dbanie_o_auto_w_zimie.html">Dbanie o auto w zimie</a>
+        <a href="luksusowe_samochody.html">Luksusowe samochody</a>
+      </div>
+    </div>
+    <a href="nasza_baza_samochodow.html">Nasza baza samochodów</a>
+    <a href="kontakt.html">Kontakt</a>
+  </div>
+
+  <div class="content">
+    <img src="auto2.jpg" alt="Zdjęcie po lewej stronie">
+    <div>
+      <h1>O nas</h1>
+      <p>Witaj na naszej pasjonującej platformie motoryzacyjnej, gdzie świat samochodów staje się niekończącą się podróżą dla miłośników motoryzacji! Nasza strona to nie tylko zbiór informacji o najnowszych modelach, ale również prawdziwe centrum dla pasjonatów, którzy kochają świat samochodów.</p>
+     <p>Niezależnie od tego, czy Twoje serce bije dla nowoczesnego designu, zaawansowanych technologii, czy też imponujących osiągów, nasza strona jest miejscem, gdzie znajdziesz wszystko, co potrzebne, by pozostać na bieżąco z dynamicznie zmieniającym się światem motoryzacji.</p>
+      <p>Czy jesteś gotowy na emocjonującą podróż po świecie samochodów? Dołącz do naszej społeczności już dziś i zanurz się w fascynującym universum motoryzacyjnym!</p>
+     </div>
+  </div>
+
+</body>
+
+</html>
