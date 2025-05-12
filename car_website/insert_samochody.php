@@ -13,13 +13,13 @@ if(isset($_POST['submit'])) {
     $pierwszy_wlasciciel = ($_POST["pierwszy_wlasciciel"] == "TAK") ? 1 : 0; // Convert to 1 if TAK, 0 if NIE
 
 
-    $sql = "INSERT INTO samochody (`marka`, `model`, `rok`, `przebieg`, `pojemnosc`, `wypadkowy`, `lokalizacja`, `kraj pochodzenia`, `pierwszy wlasciciel`)
+    $sql = "INSERT INTO cars (`marka`, `model`, `rok`, `przebieg`, `pojemnosc`, `wypadkowy`, `lokalizacja`, `kraj pochodzenia`, `pierwszy wlasciciel`)
             VALUES ('$marka', '$model', '$rok', '$przebieg', '$pojemnosc', '$wypadkowy', '$lokalizacja', '$kraj_pochodzenia', '$pierwszy_wlasciciel')";
 
     if (mysqli_query($conn, $sql)) {
        // echo "Nowy rekord zostal dodany pomyslnie!";
 
-$sql = "SELECT * FROM samochody";
+$sql = "SELECT * FROM cars ORDER BY ID DESC LIMIT 1";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
