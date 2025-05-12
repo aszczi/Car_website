@@ -19,6 +19,7 @@ if(isset($_POST['submit'])) {
     if (mysqli_query($conn, $sql)) {
        // echo "Nowy rekord zostal dodany pomyslnie!";
 
+      // $sql = "SELECT * FROM cars; //to bylo 
 $sql = "SELECT * FROM cars ORDER BY ID DESC LIMIT 1";
 $result = $conn->query($sql);
 

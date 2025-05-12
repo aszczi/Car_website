@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Strona Kontaktowa</title>
     <style>
         body {
-            background-image: url('tlo.jpg'); /* Dodaj nazwę pliku obrazu tła */
+            background-image: url('tlo.jpg'); 
             background-size: cover;
             background-position: center;
             font-family: Arial, sans-serif;
@@ -17,7 +18,7 @@
             max-width: 600px;
             margin: auto;
             padding: 20px;
-            background-color: rgba(0, 0, 0, 0.7); /* Kolor tła formularza */
+            background-color: rgba(0, 0, 0, 0.7); 
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
             margin-top: 150px;
@@ -25,10 +26,101 @@
             font-family:'Courier New', Courier, monospace;
             align-items: center;
         }
+        
+    .navbar {
+      background-color: navy;
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+
+    .dropdown .dropbtn {
+      font-size: 16px;
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+
+    .navbar a:hover, .dropdown:hover .dropbtn {
+      background-color: purple;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: navy;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      float: none;
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown-content a:hover {
+      background-color: purple;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .content {
+      display: flex;
+      width: 80%; 
+      margin: 20px;
+      background: rgba(0, 0, 0, 0.7); 
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .content img {
+      max-width: 100%;
+      margin-right: 20px;
+    }
+  
 
     </style>
 </head>
 <body>
+    <div class="navbar">
+        <a href="index.html">Strona główna</a>
+        <div class="dropdown">
+          <button class="dropbtn">Nowinki motoryzacyjne
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="wybor_pierwszego_auta.html">Wybór pierwszego auta</a>
+            <a href="dbanie_o_auto_w_zimie.html">Dbanie o auto w zimie</a>
+            <a href="luksusowe_samochody.html">Luksusowe samochody</a>
+          </div>
+        </div>
+        <a href="wyswietl_baze.php">Nasza baza samochodów</a>
+        <a href="kontakt.html">Kontakt</a>
+      </div>
     <div class="container">
         <h2>Skontaktuj się z nami</h2>
        <h3>Zadzwoń, napisz SMS bądź przyślij maila, a na pewno odpowiemy na każde pytanie.</h3>
@@ -44,6 +136,8 @@
         <h2> GDZIE ZNAJDUJE SIE NASZ SALON?</h2>
         <h3>Zawiercie ul.Pomorska 250</h3>
     </div>
+
+    
 
 </body>
 </html>

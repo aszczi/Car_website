@@ -1,5 +1,5 @@
 <?php
-    $servername='127.0.0.1';
+    $servername='localhost';
     $username='root';
     $password='';
     $dbname = "cars";
@@ -8,3 +8,4 @@
           die('Could not Connect MySql Server:' .mysql_error());
         }
 ?>
+
